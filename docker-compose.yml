@@ -1,0 +1,10 @@
+version: '1.0'
+
+services:
+  web:
+    container_name: pet_proj_flask
+    build: .
+    volumes:
+      - .:/api
+    ports:
+      - "5005:5005"
